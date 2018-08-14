@@ -1,0 +1,2617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F4FAFD"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="387dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/myLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="21dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/header_wrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    tools:layout_editor_absoluteX="11dp"
+                    android:background="#007BFF" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/AppName"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/header_wrapper"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/header_wrapper"
+                    app:layout_constraintVertical_bias="0.533" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/id1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:paddingTop="21dp"
+                android:visibility="visible"
+                tools:layout_editor_absoluteX="1dp">
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="320dp"
+                    android:layout_height="320dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/styleview"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/hr"
+                    android:layout_width="280dp"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="79dp"
+                    android:background="@color/colorAccent"
+                    app:layout_constraintEnd_toEndOf="@+id/view"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <ImageView
+                    android:id="@+id/offer1_logo"
+                    android:layout_width="170dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:padding="5dp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="96dp"
+                    android:text="@string/MaxSumma"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="166dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="96dp"
+                    android:text="@string/ProcentStavka"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="147dp"
+                    android:text="@string/MaxSrok"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="166dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="147dp"
+                    android:text="@string/SrokRassm"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="200dp"
+                    android:text="@string/Documents"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="200dp"
+                    android:text="@string/Rating"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/offer1_textInfo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="4dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo1" />
+
+                <TextView
+                    android:id="@+id/offer1_textInfo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo2" />
+
+                <TextView
+                    android:id="@+id/offer1_textInfo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="4dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo3" />
+
+                <TextView
+                    android:id="@+id/offer1_textInfo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="4dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo4" />
+
+                <TextView
+                    android:id="@+id/offer1_textInfo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="4dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo5" />
+
+                <Button
+                    android:id="@+id/moreInfo_1"
+                    android:layout_width="135dp"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/styleinfo"
+                    android:contentDescription="1"
+                    android:onClick="nextPage"
+                    android:text="@string/More"
+                    android:textColor="#007BFF "
+                    app:layout_constraintBottom_toBottomOf="@+id/view"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    tools:enabled="false"
+                    android:textAllCaps="false"
+                    />
+
+                <Button
+                    android:id="@+id/offer1_action"
+                    android:layout_width="135dp"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:background="@drawable/stylelink"
+                    android:onClick="onClick"
+                    android:text="@string/Zayavka"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="@+id/view"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    android:textAllCaps="false"/>
+
+                <TextView
+                    android:id="@+id/stars1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="4dp"
+                    android:textColor="#007BFF"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo6" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/id2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:paddingTop="21dp"
+                android:visibility="visible"
+                tools:layout_editor_absoluteX="1dp">
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="320dp"
+                    android:layout_height="320dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/styleview"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/offer2_logo"
+                    android:layout_width="170dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:padding="5dp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+                <TextView
+                    android:id="@+id/textInfo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="84dp"
+                    android:text="@string/MaxSumma"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginTop="84dp"
+                    android:text="@string/ProcentStavka"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toEndOf="@+id/textInfo1"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="147dp"
+                    android:text="@string/MaxSrok"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="147dp"
+                    android:text="@string/SrokRassm"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="198dp"
+                    android:text="@string/Documents"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/offer2_textInfo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo1" />
+
+                <TextView
+                    android:id="@+id/offer2_textInfo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo2" />
+
+                <TextView
+                    android:id="@+id/offer2_textInfo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo3" />
+
+                <TextView
+                    android:id="@+id/offer2_textInfo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo4" />
+
+                <TextView
+                    android:id="@+id/offer2_textInfo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo5" />
+
+                <TextView
+                    android:id="@+id/offer2_textInfo6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="200dp"
+                    android:text="@string/Rating"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <Button
+                    android:id="@+id/offer2_more"
+                    android:layout_width="135dp"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/styleinfo"
+                    android:contentDescription="2"
+                    android:onClick="nextPage"
+                    android:text="@string/More"
+                    android:textColor="#007BFF"
+                    android:textAllCaps="false"
+                    app:layout_constraintBottom_toBottomOf="@+id/view"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    tools:enabled="false" />
+
+                <Button
+                    android:id="@+id/offer2_action"
+                    android:layout_width="135dp"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:background="@drawable/stylelink"
+                    android:onClick="onClick"
+                    android:text="@string/Zayavka"
+                    android:textColor="#FFFFFF"
+                    android:textAllCaps="false"
+                    app:layout_constraintBottom_toBottomOf="@+id/view"
+                    app:layout_constraintStart_toStartOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/stars2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#007BFF"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/offer2_textInfo6" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/id3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:paddingTop="21dp"
+                android:visibility="visible"
+                tools:layout_editor_absoluteX="1dp">
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="320dp"
+                    android:layout_height="320dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/styleview"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/offer3_logo"
+                    android:layout_width="170dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:padding="5dp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="84dp"
+                    android:text="@string/MaxSumma"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginTop="84dp"
+                    android:text="@string/ProcentStavka"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toEndOf="@+id/textInfo1"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="147dp"
+                    android:text="@string/MaxSrok"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="147dp"
+                    android:text="@string/SrokRassm"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="198dp"
+                    android:text="@string/Documents"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/offer3_textInfo6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="200dp"
+                    android:text="@string/Rating"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/stars3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#007BFF"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/offer3_textInfo6" />
+
+
+
+                <TextView
+                    android:id="@+id/offer3_textInfo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo1" />
+
+                <TextView
+                    android:id="@+id/offer3_textInfo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo2" />
+
+                <TextView
+                    android:id="@+id/offer3_textInfo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo3" />
+
+                <TextView
+                    android:id="@+id/offer3_textInfo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo4" />
+
+                <TextView
+                    android:id="@+id/offer3_textInfo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo5" />
+
+
+
+                <Button
+                    android:id="@+id/offer3_more"
+                    android:layout_width="135dp"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/styleinfo"
+                    android:contentDescription="3"
+                    android:onClick="nextPage"
+                    android:text="@string/More"
+                    android:textColor="#007BFF "
+                    app:layout_constraintBottom_toBottomOf="@+id/view"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    tools:enabled="false"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/offer3_action"
+                    android:layout_width="135dp"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:background="@drawable/stylelink"
+                    android:onClick="onClick"
+                    android:text="@string/Zayavka"
+                    android:textColor="#FFFFFF"
+                    android:textAllCaps="false"
+                    app:layout_constraintBottom_toBottomOf="@+id/view"
+                    app:layout_constraintStart_toStartOf="@+id/view" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/id4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:paddingTop="21dp"
+                android:visibility="visible"
+                tools:layout_editor_absoluteX="1dp">
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="320dp"
+                    android:layout_height="320dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/styleview"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/offer4_logo"
+                    android:layout_width="170dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:padding="5dp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="84dp"
+                    android:text="@string/MaxSumma"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginTop="84dp"
+                    android:text="@string/ProcentStavka"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toEndOf="@+id/textInfo1"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="147dp"
+                    android:text="@string/MaxSrok"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="147dp"
+                    android:text="@string/SrokRassm"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="198dp"
+                    android:text="@string/Documents"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/offer4_textInfo6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="200dp"
+                    android:text="@string/Rating"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/stars4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#007BFF"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/offer4_textInfo6" />
+
+                <TextView
+                    android:id="@+id/offer4_textInfo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo1" />
+
+                <TextView
+                    android:id="@+id/offer4_textInfo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo2" />
+
+                <TextView
+                    android:id="@+id/offer4_textInfo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo3" />
+
+                <TextView
+                    android:id="@+id/offer4_textInfo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo4" />
+
+                <TextView
+                    android:id="@+id/offer4_textInfo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo5" />
+
+                <Button
+                    android:id="@+id/offer4_more"
+                    android:layout_width="135dp"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/styleinfo"
+                    android:contentDescription="4"
+                    android:onClick="nextPage"
+                    android:text="@string/More"
+                    android:textColor="#007BFF "
+                    app:layout_constraintBottom_toBottomOf="@+id/view"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    tools:enabled="false"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/offer4_action"
+                    android:layout_width="135dp"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:background="@drawable/stylelink"
+                    android:onClick="onClick"
+                    android:text="@string/Zayavka"
+                    android:textColor="#FFFFFF"
+                    android:textAllCaps="false"
+                    app:layout_constraintBottom_toBottomOf="@+id/view"
+                    app:layout_constraintStart_toStartOf="@+id/view" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/id5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:paddingTop="21dp"
+                android:visibility="visible"
+                tools:layout_editor_absoluteX="1dp">
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="320dp"
+                    android:layout_height="320dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/styleview"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/offer5_logo"
+                    android:layout_width="170dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:padding="5dp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="84dp"
+                    android:text="@string/MaxSumma"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginTop="84dp"
+                    android:text="@string/ProcentStavka"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toEndOf="@+id/textInfo1"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="147dp"
+                    android:text="@string/MaxSrok"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="147dp"
+                    android:text="@string/SrokRassm"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="198dp"
+                    android:text="@string/Documents"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/offer5_textInfo6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="200dp"
+                    android:text="@string/Rating"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/stars5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#007BFF"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/offer5_textInfo6" />
+
+                <TextView
+                    android:id="@+id/offer5_textInfo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo1" />
+
+                <TextView
+                    android:id="@+id/offer5_textInfo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo2" />
+
+                <TextView
+                    android:id="@+id/offer5_textInfo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo3" />
+
+                <TextView
+                    android:id="@+id/offer5_textInfo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo4" />
+
+                <TextView
+                    android:id="@+id/offer5_textInfo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo5" />
+
+                <Button
+                    android:id="@+id/offer5_more"
+                    android:layout_width="135dp"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/styleinfo"
+                    android:contentDescription="5"
+                    android:onClick="nextPage"
+                    android:text="@string/More"
+                    android:textColor="#007BFF "
+                    android:textAllCaps="false"
+                    app:layout_constraintBottom_toBottomOf="@+id/view"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    tools:enabled="false" />
+
+                <Button
+                    android:id="@+id/offer5_action"
+                    android:layout_width="135dp"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:background="@drawable/stylelink"
+                    android:onClick="onClick"
+                    android:text="@string/Zayavka"
+                    android:textColor="#FFFFFF"
+                    android:textAllCaps="false"
+                    app:layout_constraintBottom_toBottomOf="@+id/view"
+                    app:layout_constraintStart_toStartOf="@+id/view" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/id6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:paddingTop="21dp"
+                android:visibility="visible"
+                tools:layout_editor_absoluteX="1dp">
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="320dp"
+                    android:layout_height="320dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/styleview"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/offer6_logo"
+                    android:layout_width="170dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:padding="5dp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="84dp"
+                    android:text="@string/MaxSumma"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginTop="84dp"
+                    android:text="@string/ProcentStavka"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toEndOf="@+id/textInfo1"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="147dp"
+                    android:text="@string/MaxSrok"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="147dp"
+                    android:text="@string/SrokRassm"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="198dp"
+                    android:text="@string/Documents"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/offer8_textInfo6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="200dp"
+                    android:text="@string/Rating"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/stars6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#007BFF"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/offer8_textInfo6" />
+
+                <TextView
+                    android:id="@+id/offer6_textInfo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo1" />
+
+                <TextView
+                    android:id="@+id/offer6_textInfo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo2" />
+
+                <TextView
+                    android:id="@+id/offer6_textInfo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo3" />
+
+                <TextView
+                    android:id="@+id/offer6_textInfo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo4" />
+
+                <TextView
+                    android:id="@+id/offer6_textInfo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo5" />
+
+                <Button
+                    android:id="@+id/offer6_more"
+                    android:layout_width="135dp"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/styleinfo"
+                    android:contentDescription="6"
+                    android:onClick="nextPage"
+                    android:text="@string/More"
+                    android:textColor="#007BFF "
+                    android:textAllCaps="false"
+                    app:layout_constraintBottom_toBottomOf="@+id/view"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    tools:enabled="false"
+                    />
+
+                <Button
+                    android:id="@+id/offer6_action"
+                    android:layout_width="135dp"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:background="@drawable/stylelink"
+                    android:onClick="onClick"
+                    android:text="@string/Zayavka"
+                    android:textColor="#FFFFFF"
+                    android:textAllCaps="false"
+                    app:layout_constraintBottom_toBottomOf="@+id/view"
+                    app:layout_constraintStart_toStartOf="@+id/view" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/id7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:paddingTop="21dp"
+                android:visibility="visible"
+                tools:layout_editor_absoluteX="1dp">
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="320dp"
+                    android:layout_height="320dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/styleview"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/offer7_logo"
+                    android:layout_width="170dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:padding="5dp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="84dp"
+                    android:text="@string/MaxSumma"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginTop="84dp"
+                    android:text="@string/ProcentStavka"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toEndOf="@+id/textInfo1"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="147dp"
+                    android:text="@string/MaxSrok"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="147dp"
+                    android:text="@string/SrokRassm"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="198dp"
+                    android:text="@string/Documents"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/offer7_textInfo6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="200dp"
+                    android:text="@string/Rating"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/stars7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#007BFF"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/offer7_textInfo6" />
+
+                <TextView
+                    android:id="@+id/offer7_textInfo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo1" />
+
+                <TextView
+                    android:id="@+id/offer7_textInfo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo2" />
+
+                <TextView
+                    android:id="@+id/offer7_textInfo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo3" />
+
+                <TextView
+                    android:id="@+id/offer7_textInfo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo4" />
+
+                <TextView
+                    android:id="@+id/offer7_textInfo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo5" />
+
+                <Button
+                    android:id="@+id/offer7_more"
+                    android:layout_width="135dp"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/styleinfo"
+                    android:contentDescription="7"
+                    android:onClick="nextPage"
+                    android:text="@string/More"
+                    android:textAllCaps="false"
+                    android:textColor="#007BFF "
+                    app:layout_constraintBottom_toBottomOf="@+id/view"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    tools:enabled="false" />
+
+                <Button
+                    android:id="@+id/offer7_action"
+                    android:layout_width="135dp"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:background="@drawable/stylelink"
+                    android:onClick="onClick"
+                    android:text="@string/Zayavka"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="@+id/view"
+                    app:layout_constraintStart_toStartOf="@+id/view" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/id8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:paddingTop="21dp"
+                android:visibility="visible"
+                tools:layout_editor_absoluteX="1dp">
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="320dp"
+                    android:layout_height="320dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/styleview"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/offer8_logo"
+                    android:layout_width="170dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:padding="5dp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="84dp"
+                    android:text="@string/MaxSumma"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginTop="84dp"
+                    android:text="@string/ProcentStavka"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toEndOf="@+id/textInfo1"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="147dp"
+                    android:text="@string/MaxSrok"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="147dp"
+                    android:text="@string/SrokRassm"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="198dp"
+                    android:text="@string/Documents"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/offer8_textInfo6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="200dp"
+                    android:text="@string/Rating"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/stars8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#007BFF"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/offer8_textInfo6" />
+
+                <TextView
+                    android:id="@+id/offer8_textInfo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo1" />
+
+                <TextView
+                    android:id="@+id/offer8_textInfo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo2" />
+
+                <TextView
+                    android:id="@+id/offer8_textInfo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo3" />
+
+                <TextView
+                    android:id="@+id/offer8_textInfo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo4" />
+
+                <TextView
+                    android:id="@+id/offer8_textInfo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo5" />
+
+                <Button
+                    android:id="@+id/offer8_more"
+                    android:layout_width="135dp"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/styleinfo"
+                    android:contentDescription="8"
+                    android:onClick="nextPage"
+                    android:text="@string/More"
+                    android:textAllCaps="false"
+                    android:textColor="#007BFF "
+                    app:layout_constraintBottom_toBottomOf="@+id/view"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    tools:enabled="false" />
+
+                <Button
+                    android:id="@+id/offer8_action"
+                    android:layout_width="135dp"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:background="@drawable/stylelink"
+                    android:onClick="onClick"
+                    android:text="@string/Zayavka"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="@+id/view"
+                    app:layout_constraintStart_toStartOf="@+id/view" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/id9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:paddingTop="21dp"
+                android:visibility="visible"
+                tools:layout_editor_absoluteX="1dp">
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="320dp"
+                    android:layout_height="320dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/styleview"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/offer9_logo"
+                    android:layout_width="170dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:padding="5dp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="84dp"
+                    android:text="@string/MaxSumma"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginTop="84dp"
+                    android:text="@string/ProcentStavka"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toEndOf="@+id/textInfo1"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="147dp"
+                    android:text="@string/MaxSrok"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="147dp"
+                    android:text="@string/SrokRassm"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="198dp"
+                    android:text="@string/Documents"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/offer9_textInfo6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="200dp"
+                    android:text="@string/Rating"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/stars9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#007BFF"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/offer9_textInfo6" />
+
+                <TextView
+                    android:id="@+id/offer9_textInfo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo1" />
+
+                <TextView
+                    android:id="@+id/offer9_textInfo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo2" />
+
+                <TextView
+                    android:id="@+id/offer9_textInfo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo3" />
+
+                <TextView
+                    android:id="@+id/offer9_textInfo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo4" />
+
+                <TextView
+                    android:id="@+id/offer9_textInfo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo5" />
+
+                <Button
+                    android:id="@+id/offer9_more"
+                    android:layout_width="135dp"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/styleinfo"
+                    android:contentDescription="9"
+                    android:onClick="nextPage"
+                    android:text="@string/More"
+                    android:textAllCaps="false"
+                    android:textColor="#007BFF "
+                    app:layout_constraintBottom_toBottomOf="@+id/view"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    tools:enabled="false" />
+
+                <Button
+                    android:id="@+id/offer9_action"
+                    android:layout_width="135dp"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:background="@drawable/stylelink"
+                    android:onClick="onClick"
+                    android:text="@string/Zayavka"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="@+id/view"
+                    app:layout_constraintStart_toStartOf="@+id/view" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/id10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:paddingTop="21dp"
+                android:visibility="visible"
+                tools:layout_editor_absoluteX="1dp">
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="320dp"
+                    android:layout_height="320dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/styleview"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/offer10_logo"
+                    android:layout_width="170dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:padding="5dp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="84dp"
+                    android:text="@string/MaxSumma"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginTop="84dp"
+                    android:text="@string/ProcentStavka"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toEndOf="@+id/textInfo1"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="147dp"
+                    android:text="@string/MaxSrok"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="147dp"
+                    android:text="@string/SrokRassm"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="198dp"
+                    android:text="@string/Documents"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/offer10_textInfo6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="200dp"
+                    android:text="@string/Rating"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/stars10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#007BFF"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/offer10_textInfo6" />
+
+                <TextView
+                    android:id="@+id/offer10_textInfo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo1" />
+
+                <TextView
+                    android:id="@+id/offer10_textInfo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo2" />
+
+                <TextView
+                    android:id="@+id/offer10_textInfo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo3" />
+
+                <TextView
+                    android:id="@+id/offer10_textInfo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo4" />
+
+                <TextView
+                    android:id="@+id/offer10_textInfo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo5" />
+
+                <Button
+                    android:id="@+id/offer10_more"
+                    android:layout_width="135dp"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/styleinfo"
+                    android:contentDescription="10"
+                    android:onClick="nextPage"
+                    android:text="@string/More"
+                    android:textAllCaps="false"
+                    android:textColor="#007BFF "
+                    app:layout_constraintBottom_toBottomOf="@+id/view"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    tools:enabled="false" />
+
+                <Button
+                    android:id="@+id/offer10_action"
+                    android:layout_width="135dp"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:background="@drawable/stylelink"
+                    android:onClick="onClick"
+                    android:text="@string/Zayavka"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="@+id/view"
+                    app:layout_constraintStart_toStartOf="@+id/view" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/id11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:paddingTop="21dp"
+                android:visibility="visible"
+                tools:layout_editor_absoluteX="1dp">
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="320dp"
+                    android:layout_height="320dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/styleview"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/offer11_logo"
+                    android:layout_width="170dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:padding="5dp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="84dp"
+                    android:text="@string/MaxSumma"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginTop="84dp"
+                    android:text="@string/ProcentStavka"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toEndOf="@+id/textInfo1"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="147dp"
+                    android:text="@string/MaxSrok"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="147dp"
+                    android:text="@string/SrokRassm"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="198dp"
+                    android:text="@string/Documents"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/offer11_textInfo6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="200dp"
+                    android:text="@string/Rating"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/stars11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#007BFF"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/offer11_textInfo6" />
+
+                <TextView
+                    android:id="@+id/offer11_textInfo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo1" />
+
+                <TextView
+                    android:id="@+id/offer11_textInfo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo2" />
+
+                <TextView
+                    android:id="@+id/offer11_textInfo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo3" />
+
+                <TextView
+                    android:id="@+id/offer11_textInfo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo4" />
+
+                <TextView
+                    android:id="@+id/offer11_textInfo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo5" />
+
+                <Button
+                    android:id="@+id/offer11_more"
+                    android:layout_width="135dp"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/styleinfo"
+                    android:contentDescription="11"
+                    android:onClick="nextPage"
+                    android:text="@string/More"
+                    android:textAllCaps="false"
+                    android:textColor="#007BFF "
+                    app:layout_constraintBottom_toBottomOf="@+id/view"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    tools:enabled="false" />
+
+                <Button
+                    android:id="@+id/offer11_action"
+                    android:layout_width="135dp"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:background="@drawable/stylelink"
+                    android:onClick="onClick"
+                    android:text="@string/Zayavka"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="@+id/view"
+                    app:layout_constraintStart_toStartOf="@+id/view" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/id12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:paddingTop="21dp"
+                android:visibility="visible"
+                tools:layout_editor_absoluteX="1dp">
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="320dp"
+                    android:layout_height="320dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/styleview"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/offer12_logo"
+                    android:layout_width="170dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:padding="5dp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="84dp"
+                    android:text="@string/MaxSumma"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginTop="84dp"
+                    android:text="@string/ProcentStavka"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toEndOf="@+id/textInfo1"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="147dp"
+                    android:text="@string/MaxSrok"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="147dp"
+                    android:text="@string/SrokRassm"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textInfo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="198dp"
+                    android:text="@string/Documents"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/stars12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#007BFF"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/offer12_textInfo6" />
+
+                <TextView
+                    android:id="@+id/offer12_textInfo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo1" />
+
+                <TextView
+                    android:id="@+id/offer12_textInfo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo2" />
+
+                <TextView
+                    android:id="@+id/offer12_textInfo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo3" />
+
+                <TextView
+                    android:id="@+id/offer12_textInfo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo4" />
+
+                <TextView
+                    android:id="@+id/offer12_textInfo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#282945"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfo5" />
+
+                <TextView
+                    android:id="@+id/offer12_textInfo6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="200dp"
+                    android:text="@string/Rating"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <Button
+                    android:id="@+id/offer12_more"
+                    android:layout_width="135dp"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/styleinfo"
+                    android:contentDescription="12"
+                    android:onClick="nextPage"
+                    android:text="@string/More"
+                    android:textAllCaps="false"
+                    android:textColor="#007BFF "
+                    app:layout_constraintBottom_toBottomOf="@+id/view"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    tools:enabled="false" />
+
+                <Button
+                    android:id="@+id/offer12_action"
+                    android:layout_width="135dp"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginStart="164dp"
+                    android:background="@drawable/stylelink"
+                    android:onClick="onClick"
+                    android:text="@string/Zayavka"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="@+id/view"
+                    app:layout_constraintStart_toStartOf="@+id/view" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
